@@ -4,6 +4,7 @@ a package to add logging handlers to write logs into database in django project
 # Quick start
 1. Add "dblogs" to your INSTALLED_APPS settings;
 2. Config loggings handlers to log stuff:
+    `
     'handlers':{
         'log_db':{
             'level': 'WARNING',
@@ -15,5 +16,6 @@ a package to add logging handlers to write logs into database in django project
             'formatter': 'simple',
             },
         }
+    `
 3. Include the polls URLconf in your project urls.py;
 4. Run 'python manage.py migrate' to create models to store logs;
